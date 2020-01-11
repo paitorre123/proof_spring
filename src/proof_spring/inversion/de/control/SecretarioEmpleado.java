@@ -8,4 +8,10 @@ public class SecretarioEmpleado extends Empleados {
 		return "Secretario Gestiona agenda de jefes";
 	}
 
+	@Override
+	public String getInformes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

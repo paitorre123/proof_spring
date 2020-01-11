@@ -15,6 +15,7 @@ public class UsoEmpleados {
 		contexto.close();
 		
 		System.out.println(e1.getTareas());
+		System.out.println(e1.getInformes());
 	}
 
 }

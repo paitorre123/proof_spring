@@ -7,4 +7,10 @@ public class JefeEmpleado extends Empleados{
 		return "Jefe Gestiona de tareas";
 	}
 
+	@Override
+	public String getInformes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

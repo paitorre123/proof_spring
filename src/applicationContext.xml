@@ -9,8 +9,12 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
 
-<bean id="generadorDeEmpleados" class="proof_spring.inversion.de.control.SecretarioEmpleado">
+<bean id="miInforme" class="inyeccion.dependencias.Informe"></bean>
 
+<bean id="generadorDeEmpleados" class="proof_spring.inversion.de.control.DirectorEmpleado">
+	<constructor-arg ref="miInforme"></constructor-arg>
 </bean>
+
+
 
 </beans>
