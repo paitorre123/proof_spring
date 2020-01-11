@@ -23,4 +23,9 @@ public class DirectorEmpleado extends Empleados {
 		return "Director muestra su informe: "+ this.nuevoInforme.getInforme();
 	}
 
+	public void setNuevoInforme(ICreacionInforme nuevoInforme) {
+		this.nuevoInforme = nuevoInforme;
+	}
+	
+	
 }
