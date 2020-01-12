@@ -24,6 +24,8 @@ public class UsoEmpleados {
 		System.out.println("Empleado 2");
 		System.out.println(e2.getTareas());
 		System.out.println(e2.getInformes());
+		System.out.println(e2.getEmail());
+		System.out.println(e2.getNombreEmpresa());
 	
 		contexto.close();
 	}
