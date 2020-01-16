@@ -1,7 +1,7 @@
 package proof_spring.inversion.de.control;
 
 public abstract class Empleados {
-	
+	private String nombre;
 	private String email;
 	private String nombreEmpresa;
 	
@@ -19,6 +19,12 @@ public abstract class Empleados {
 	}
 	public void setNombreEmpresa(String nombreEmpresa) {
 		this.nombreEmpresa = nombreEmpresa;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 	
 	

@@ -8,7 +8,7 @@ public class UsoEmpleados {
 		
 		
 		
-		ClassPathXmlApplicationContext  contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ClassPathXmlApplicationContext  contexto = new ClassPathXmlApplicationContext("applicationContext2.xml");
 		
 		
 		Empleados e1 = contexto.getBean("generadorDeEmpleadosDirector", Empleados.class);
