@@ -27,5 +27,15 @@ public class DirectorEmpleado extends Empleados {
 		this.nuevoInforme = nuevoInforme;
 	}
 	
+	//METODO INIT
+	public void inicioDirectorEmpleado() {
+		System.out.println("Metodo init Director empleado");
+	}
+	
+	//METODO DESTROY
+	public void finalDirectorEmpleado() {
+		System.out.println("Metodo destroy Director empleado");
+	}
+	
 	
 }

@@ -13,16 +13,13 @@
 
 	<bean id="miInforme" class="inyeccion.dependencias.Informe"></bean>
 	
-	<bean id="generadorDeEmpleadoSecretario" 
-		class="proof_spring.inversion.de.control.SecretarioEmpleado" 
-		scope="singleton">
-			<property name="nuevoInforme" ref="miInforme"></property>
-	</bean>
 	
 	<bean id="generadorDeEmpleadosDirector"
 		class="proof_spring.inversion.de.control.DirectorEmpleado"
-		scope="prototype">
+		scope="prototype" init-method="inicioDirectorEmpleado"
+		destroy-method="finalDirectorEmpleado">
 		<constructor-arg ref="miInforme"></constructor-arg>
-
 	</bean>
+	
 </beans>
+
