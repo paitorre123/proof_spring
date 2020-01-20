@@ -8,8 +8,9 @@ public class UsoAnotaciones {
 		
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContextJA4.xml");
 		
-		Empleado ce_1 = contexto.getBean("ComercialExperimentado", ComercialExperimentado.class);
-		System.out.println(ce_1.getTarea());;
+		Empleado ce_1 = contexto.getBean("comercialExperimentado", ComercialExperimentado.class);
+		System.out.println(ce_1.getTarea());
+		System.out.println(ce_1.getInforme());
 		
 		
 		contexto.close();
