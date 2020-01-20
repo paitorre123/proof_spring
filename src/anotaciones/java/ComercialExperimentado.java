@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ComercialExperimentado extends Empleado{
 	
+	@Autowired
 	private ICreacionInformeFinanciero informeFinanciero;
 	
 	
@@ -25,10 +26,8 @@ public class ComercialExperimentado extends Empleado{
 		return "Comercial experimentado: " + this.informeFinanciero.getInformeFinanciero();
 	}
 	
-	@Autowired
-	public void setInformeFinanciero(ICreacionInformeFinanciero informeFinanciero) {
-		this.informeFinanciero = informeFinanciero;
-	}
+	
+	
 
 	
 
