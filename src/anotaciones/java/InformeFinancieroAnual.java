@@ -3,16 +3,15 @@ package anotaciones.java;
 import org.springframework.stereotype.Component;
 
 @Component
-public class InformeFinanciero implements ICreacionInformeFinanciero {
+public class InformeFinancieroAnual implements ICreacionInformeFinanciero {
 
-	public InformeFinanciero() {
+	public InformeFinancieroAnual() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String getInformeFinanciero() {
-		// TODO Auto-generated method stub
-		return "Aplicando el informe financiero";
+		return "Aplicando el informe financiero anual";
 	}
 
 }

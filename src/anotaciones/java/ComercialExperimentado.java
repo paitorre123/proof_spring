@@ -1,6 +1,7 @@
 package anotaciones.java;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /*la clase ComercialExperimentado se registra en el
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
 public class ComercialExperimentado extends Empleado{
 	
 	@Autowired
+	@Qualifier("informeFinancieroAnual")
 	private ICreacionInformeFinanciero informeFinanciero;
 	
 	
